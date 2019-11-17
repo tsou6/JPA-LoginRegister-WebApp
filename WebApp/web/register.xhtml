@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <body>
+        
+         <body bgcolor="red">
+</body>
+        <h1>Registration Form</h1>
+        
+        <f:view>
+                <h:form id="registerForm">
+                <table border="1">
+                    <thead>
+                        <tr>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Username:</td>
+                            <td><h:inputText value="#{web.uname}"
+                                           required = "true"></h:inputText></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><h:inputText value="#{web.email}"
+                                           required = "true"></h:inputText></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><h:inputText value="#{web.pass}"
+                                           required = "true"></h:inputText></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Phone</td>
+                            <td><h:inputText value="#{web.mphone}"
+                                           required = "true"></h:inputText></td>
+                        </tr>
+                    </tbody>
+                </table>
+                  <h:commandButton value = "Register" action = "#{web.save()}"></h:commandButton>
+                   <button onclick="location.href='index.html'" type="button">
+            Login </button>
+            </h:form>
+        </f:view>
+
+    </body>
+</html>
